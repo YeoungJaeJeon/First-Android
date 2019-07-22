@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+>
+    <!--1.안드로이드 파일임을 명시 레이아웃 형태는 선형(직선 형태)
+        2.넓이와 높이는 부모 크기만큼의 크기=match_parent (시작 레이아웃이기 때문에 자체가 부모형태임)
+        3.orientation은 정렬을 가로 or 새로 중 어떤 형태로 정렬할지 결정할때 사용  -->
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/holo_blue_light"
+        android:gravity="center"
+        android:text="LOGIN"
+        android:textSize="30sp">
+        <!--<말 그대로 텍스트를 보여줌>
+            레이아웃 형태와 마찬가지로 넓이와 높이를 설정 (wrap_content=현재 적용되는 것의 크기에 맞춤)
+            background는 가르키고 현재 바탕에 블루계열을 색상을 입힘.
+            gravity는 삽입할 무언가의 위치를 결정함-->
+    </TextView>
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/kyungseo"
+        android:layout_gravity="center"
+        />
+    <!--<이미지를 보여주는것>
+        이미지 파일은 백그라운드로 넣으면 깨질 확률이 있어 null값을 주는게 좋음
+        scr 파일에 있는 mipmap안에 이미지 파일을 불러옴.
+        layout_gravity와 gravity의 차이는 부모의 여유공간을 활용할지,
+        아니면 현재 삽입하는 무언가의 여유공간을 활용할지 차이이다 둘다 위치를 결정함. -->
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:hint="id"
+        android:textSize="20sp"
+        />
+    <!--<에디트 텍스트는 외부에서 텍스트를 입력할수 있게 하는창>
+        텍스트 명령어를 사용해 입력받기 전에도 문자를 쓸수 있음.-->
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:hint="password"
+        android:textSize="20sp"
+            />
+    <Button
+        android:id="@+id/loginButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="login"
+        android:textSize="20sp"
+        android:gravity="center"
+        />
+    <!--<버튼 생성>-->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="o r"
+        android:textSize="20sp"
+        android:gravity="center"
+        />
+    <Button
+        android:id="@+id/facebookButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="face book"
+        android:textSize="20sp"
+        android:gravity="center"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="10"
+        >
+        <!--필요에 따라 레이아웃 내에 또 다른 레이아웃을 추가 할 수 있음
+            weight sum은 넓이와 높이를 정하기 힘들때 비율로 크기를 설정해주는 것-->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="back"
+            android:gravity="center"
+            android:layout_weight="5"
+            />
+        <!--layout_weight를 사용해 weight sum으로 정해진 비율을 사용할 만큼의 크기로 결정할 수 있음-->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="out"
+            android:gravity="center"
+            android:layout_weight="5"
+            />
+
+    </LinearLayout>
+
+
+
+</LinearLayout>
+
