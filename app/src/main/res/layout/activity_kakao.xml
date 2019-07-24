@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+>
+    <TextView
+        android:id="@+id/friend"
+        android:layout_width="275dp"
+        android:layout_height="wrap_content"
+        android:text="친구"
+        android:textSize="30sp"
+        android:paddingLeft="15dp"
+        android:paddingTop="5dp"
+        />
+    <!--padding<방향>="값" >>> 패딩방향으로 입력된 값 만큼 이동-->
+    <Button
+        android:id="@+id/search"
+        android:layout_width="45dp"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/friend"
+        android:paddingLeft="15dp"
+        android:drawableLeft="@drawable/search"
+        android:background="@android:color/white"
+        />
+    <!--drawable<방향>="이미지" >>> 텍스트를 기준으로 방향에 따라 이미지 위치 결정
+    이걸 사용한 이유는 백보드위에 이미지가 나타나지 않아서 찾은 방법임.
+    정석 방법 찾아 보기!!-->
+    <Button
+        android:id="@+id/additional"
+        android:layout_width="45dp"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/search"
+        android:paddingLeft="15dp"
+        android:drawableLeft="@drawable/person_add"
+        android:background="@android:color/white"
+        />
+    <Button
+        android:id="@+id/setting"
+        android:layout_width="45dp"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/additional"
+        android:paddingLeft="15dp"
+        android:drawableLeft="@drawable/setting"
+        android:background="@android:color/white"
+        />
+    <Button
+        android:id="@+id/user"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="15dip"
+        android:paddingTop="15dip"
+        android:text="전영재"
+        android:textSize="20sp"
+        android:drawablePadding="25dp"
+        android:gravity="left|center_vertical"
+        android:background="@android:color/white"
+        android:drawableStart="@drawable/kyungseo1"
+        android:layout_below="@+id/friend"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="친구"
+        android:textSize="15sp"
+        android:paddingLeft="15dp"
+        android:paddingTop="10dp"
+        android:layout_below="@+id/user"
+        >
+    </TextView>
+</RelativeLayout>
+

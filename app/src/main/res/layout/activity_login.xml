@@ -83,6 +83,7 @@
             android:text="back"
             android:gravity="center"
             android:layout_weight="5"
+            android:background="@android:color/holo_green_light"
             />
         <!--layout_weight를 사용해 weight sum으로 정해진 비율을 사용할 만큼의 크기로 결정할 수 있음-->
         <TextView
@@ -91,6 +92,7 @@
             android:text="out"
             android:gravity="center"
             android:layout_weight="5"
+            android:background="@android:color/holo_green_light"
             />
 
     </LinearLayout>
