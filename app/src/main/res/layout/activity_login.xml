@@ -51,7 +51,10 @@
         android:layout_height="wrap_content"
         android:text="login"
         android:textSize="20sp"
+        android:background="@drawable/button"
         android:gravity="center"
+        android:drawableStart="@drawable/user"
+        android:paddingLeft="10dp"
         />
     <!--<버튼 생성>-->
     <TextView
@@ -68,6 +71,9 @@
         android:text="face book"
         android:textSize="20sp"
         android:gravity="center"
+        android:background="@drawable/button"
+        android:drawableStart="@drawable/facebook"
+        android:paddingLeft="10dp"
         />
     <LinearLayout
         android:layout_width="match_parent"

@@ -59,6 +59,7 @@
         android:layout_below="@+id/friend"
         />
     <TextView
+        android:id="@+id/userfriend"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="친구"
@@ -68,5 +69,13 @@
         android:layout_below="@+id/user"
         >
     </TextView>
+    <View
+        android:id="@+id/line"
+        android:layout_width="match_parent"
+        android:background="#A9A9A9"
+        android:layout_height="2px"
+        android:layout_below="@+id/userfriend"
+
+        />
 </RelativeLayout>
 
