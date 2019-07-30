@@ -55,7 +55,8 @@
         android:gravity="center"
         android:drawableStart="@drawable/user"
         android:paddingLeft="10dp"
-        />
+        android:onClick="onClick"
+        /> <!--  클릭 기능 추가-->
     <!--<버튼 생성>-->
     <TextView
         android:layout_width="match_parent"
@@ -83,16 +84,16 @@
         >
         <!--필요에 따라 레이아웃 내에 또 다른 레이아웃을 추가 할 수 있음
             weight sum은 넓이와 높이를 정하기 힘들때 비율로 크기를 설정해주는 것-->
-        <TextView
+        <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="back"
+            android:text="회원가입"
             android:gravity="center"
             android:layout_weight="5"
             android:background="@android:color/holo_green_light"
             />
         <!--layout_weight를 사용해 weight sum으로 정해진 비율을 사용할 만큼의 크기로 결정할 수 있음-->
-        <TextView
+        <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="out"
