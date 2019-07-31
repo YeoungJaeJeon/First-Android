@@ -55,7 +55,7 @@
         android:gravity="center"
         android:drawableStart="@drawable/user"
         android:paddingLeft="10dp"
-        android:onClick="onClick"
+
         /> <!--  클릭 기능 추가-->
     <!--<버튼 생성>-->
     <TextView
